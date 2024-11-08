@@ -8,7 +8,14 @@ import com.intellectsoft.platform.portafolio.infrastructure.persistence.jpa.repo
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
-
+/**
+ * BackendStackCommandServiceImpl
+ * @summary
+ * The BackendStackCommandServiceImpl class is responsible for handling the backend stack commands.
+ * It implements the BackendStackCommandService interface.
+ * @see BackendStackCommandService
+ * @since 1.0.0
+ */
 @Service
 public class BackendStackCommandServiceImpl implements BackendStackCommandService {
 
@@ -18,6 +25,7 @@ public class BackendStackCommandServiceImpl implements BackendStackCommandServic
         this.backendStackRepository = backendStackRepository;
     }
 
+    // @inheritdoc
     @Override
     public Optional<BackendStack> handle(CreateBackendStackCommand command) {
         if (command.id() == null || command.id() <= 0) {

@@ -10,7 +10,14 @@ import jakarta.validation.constraints.Size;
 import lombok.Getter;
 
 import java.util.Date;
-
+/**
+ * WebApplication Aggregate Root
+ *
+ * @summary
+ * The WebApplication class is an aggregate root that represents a web application.
+ * It is responsible for handling the CreateWebApplicationCommand command.
+ * @since 1.0.0
+ */
 @Entity
 @Getter
 public class WebApplication extends AuditableAbstractAggregateRoot<WebApplication> {
@@ -71,6 +78,12 @@ public class WebApplication extends AuditableAbstractAggregateRoot<WebApplicatio
 
     public WebApplication() {}
 
+    /**
+     * @summary Constructor.
+     * It creates a new WebApplication instance based on the CreateWebApplicationCommand command.
+     * @param command - the CreateWebApplicationCommand command
+     * @param clientId - the ClientId value object
+     */
     public WebApplication(CreateWebApplicationCommand command, ClientId clientId) {
         if (command == null || clientId == null) {
             throw new IllegalArgumentException("Command and ClientId cannot be null");

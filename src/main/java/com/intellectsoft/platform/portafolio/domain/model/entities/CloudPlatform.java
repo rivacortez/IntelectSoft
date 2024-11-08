@@ -5,6 +5,13 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 
+/**
+ * CloudPlatform Entity
+ * @summary
+ * The CloudPlatform class is an entity that represents a cloud platform.
+ * It contains the ID and name of the cloud platform.
+ * @since 1.0.0
+ */
 @Entity
 @Getter
 public class CloudPlatform {
@@ -16,8 +23,16 @@ public class CloudPlatform {
     @Enumerated(EnumType.STRING)
     private CloudPlatformName name;
 
+    /**
+     * Default constructor.
+     * It is required by JPA.
+     */
     public CloudPlatform() {}
 
+    /**
+     * Constructs a new CloudPlatform with the specified name.
+     * @param name - the name of the cloud platform
+     */
     public CloudPlatform(CloudPlatformName name) {
         this.name = name;
     }
