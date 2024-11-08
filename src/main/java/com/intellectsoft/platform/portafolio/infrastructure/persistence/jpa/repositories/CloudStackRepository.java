@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface CloudStackRepository  extends JpaRepository<CloudPlatform, Long> {
+public interface CloudStackRepository extends JpaRepository<CloudPlatform, Long> {
     Optional<CloudPlatform> findByName(CloudPlatformName name);
     boolean existsByName(CloudPlatformName name);
 }

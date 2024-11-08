@@ -3,6 +3,7 @@ package com.intellectsoft.platform.portafolio.domain.model.valueobjects;
 import jakarta.persistence.Embeddable;
 
 @Embeddable
+
 public class AvailabilityPercentage {
     private int value;
 

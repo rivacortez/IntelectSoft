@@ -15,5 +15,4 @@ public record CreateWebApplicationCommand(
         String description,
         int availabilityPercentage,
         Date launchDate
-) {
-}
+) {}

@@ -7,7 +7,7 @@ import com.intellectsoft.platform.portafolio.domain.model.valueobjects.WebAddres
 
 import java.util.Date;
 
-public record WebApplicationResource(
+public record WebApplicationResource  (
         Long id,
         String name,
         Long clientId,

@@ -4,7 +4,8 @@ import com.intellectsoft.platform.portafolio.domain.model.commands.CreateWebAppl
 import com.intellectsoft.platform.portafolio.domain.model.valueobjects.ClientId;
 import com.intellectsoft.platform.portafolio.interfaces.rest.resources.CreateWebApplicationResource;
 
-public class CreateWebApplicationCommandFromResourceAssembler  {
+
+public class CreateWebApplicationCommandFromResourceAssembler {
 
     public static CreateWebApplicationCommand toCommandFromResource(CreateWebApplicationResource resource) {
         return new CreateWebApplicationCommand(
