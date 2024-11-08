@@ -1,4 +1,7 @@
 package com.intellectsoft.platform.portafolio.domain.model.commands;
 
-public record PopulateBackendStackCommand() {
+import org.springframework.stereotype.Service;
+
+@Service
+public class PopulateBackendStackCommand{
 }
